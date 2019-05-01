@@ -3,7 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
-      - apt-get install dotnet-sdk-2.2
+      - apt-get -y update
+      - apt-get install -y dotnet-sdk-2.1
   build:
     commands:
       - dotnet test ./src/HelloTests/HelloTests.csproj
