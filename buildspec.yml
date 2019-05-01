@@ -8,7 +8,7 @@ phases:
       - dpkg -i packages-microsoft-prod.deb
       - apt-get install apt-transport-https
       - apt-get -y update
-      - apt-get install -y dotnet-sdk-2.1
+      - apt-get install -y dotnet-sdk-2.2
   build:
     commands:
       - dotnet test ./src/HelloTests/HelloTests.csproj
